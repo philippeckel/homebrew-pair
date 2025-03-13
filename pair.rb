@@ -10,7 +10,7 @@ class Pair < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/philippeckel/pair/releases/download/0.0.1/pair_Darwin_x86_64.tar.gz"
-      sha256 "da112da511e0a83cd0bf6933245e6045ea4cbc374a6c4d29878b6c80832916e7"
+      sha256 "9a7172dbbb40100a9d3a61795413c524ed0bf9697419a14c151e2199dc2835b5"
 
       def install
         bin.install "pair"
@@ -18,7 +18,7 @@ class Pair < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/philippeckel/pair/releases/download/0.0.1/pair_Darwin_arm64.tar.gz"
-      sha256 "81ab9352d30720affbf0805db22df9acedc654ca5a83f8a66a2bc94b90901ce0"
+      sha256 "356bdba1dd3548d627d0ad7862451c29b6089370d365345498aa79c458422068"
 
       def install
         bin.install "pair"
@@ -30,7 +30,7 @@ class Pair < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/philippeckel/pair/releases/download/0.0.1/pair_Linux_x86_64.tar.gz"
-        sha256 "5b70495acb6c7e31b25eaed95f4710d7cbb6789328de2b4011bac040cbe6952c"
+        sha256 "64d240508c4e1c43808971c030393df42d333cebebb877854885cf0a001961e0"
 
         def install
           bin.install "pair"
@@ -40,7 +40,7 @@ class Pair < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/philippeckel/pair/releases/download/0.0.1/pair_Linux_arm64.tar.gz"
-        sha256 "a0adfdaefeb81c613a061468dd18be49983e1257489d1d85a50bfb279bb30a4a"
+        sha256 "b2a28be4841d1b04a4f8e4e6c8e76353ce14cbd0c1aaa1050d7ea458a192d41b"
 
         def install
           bin.install "pair"
